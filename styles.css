@@ -1,0 +1,17 @@
+.CSUheader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hostPics {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+img.colotPic {
+  transform: rotateX(-7deg);
+  width: 37%;
+}
