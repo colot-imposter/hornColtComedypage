@@ -3,6 +3,10 @@ body {
   border-left: 3px solid #e3e3e8;
   border-right: 3px solid #e3e3e8;
   margin: 5% 10% 0 10%;
+  font-family: "Poppins" "RobotoSlab";
+}
+div {
+  box-shadow: 0px 4px 10px #888888;
 }
 
 header {
@@ -12,11 +16,27 @@ header {
 }
 h1 {
   text-align: center;
+  font-family: "Poppins", serif;
 }
 h2 {
   color: white;
   text-align: center;
+  font-family: "Roboto Slab", serif;
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact div {
+}
+
+.mailchimpInput h2 {
+  color: black;
+  text-align: center;
+}
+
 /*.dropdown-content {
   display: none;
   position: absolute;
@@ -94,13 +114,40 @@ table {
   align-items: center;
 }
 #CSU img {
-  height: 25em;
+  height: 21em;
   align-content: center;
 }
+
 #CSU {
   border-top: 2px solid white;
   padding: 2em 1em;
   margin: 1em 2.6em;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+#CSU img:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #shows {
@@ -111,4 +158,29 @@ table {
   border-top: 2px solid white;
   padding: 2em 1em;
   margin: 1em 2.6em;
+}
+.mailchimpInput {
+  max-width: 700px;
+  align-content: center;
+  padding: 1em;
+  flex: 7 85%;
+}
+.mailchimpInput div {
+  padding: 1em;
+}
+.bookingInfo {
+  font-size: 1.1em;
+  font-family: "Roboto Slab", serif;
+  padding: 7em 2em;
+  text-align: center;
+  color: #e5efff;
+}
+.bookingInfo p {
+  font-family: "Poppins", sans-serif;
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Poppins, Arial, sans-serif;
 }
